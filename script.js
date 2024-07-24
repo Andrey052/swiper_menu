@@ -1,24 +1,33 @@
 // swiper
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
+    // Дополнительные параметры
     direction: 'horizontal',
     loop: true,
 
-    // If we need pagination
+    // расстояние между слайдами
+    spaceBetween: 5, 
+
+    // Количество видимых слайдов
+    slidesPerView: 'auto', 
+    centeredSlides: true, 
+
+    // нумерация страниц
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
 
-    // Navigation arrows
+    // Стрелки навигации
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
+    // полоса прокрутки
     scrollbar: {
         el: '.swiper-scrollbar',
+        hide: false,
     },
 });
 
